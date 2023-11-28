@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  Regression with firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression with firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 19 19:12:32 JST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>172 seconds (172801 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testsuite.PoupWindowns_Day17.verifyNewTab()'><b>verifyNewTab</b><br>Test class: testsuite.PoupWindowns_Day17</td>
+<td></td>
+<td>2</td>
+<td>testsuite.PoupWindowns_Day17@5032714f</td></tr>
+<tr>
+<td title='testsuite.Day16_AlertPractice.alertWithOkAndCancel_CancelClick()'><b>alertWithOkAndCancel_CancelClick</b><br>Test class: testsuite.Day16_AlertPractice</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day16_AlertPractice@25be7b63</td></tr>
+<tr>
+<td title='testsuite.Day12_HW.selectDropdown()'><b>selectDropdown</b><br>Test class: testsuite.Day12_HW</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day12_HW@533bda92</td></tr>
+<tr>
+<td title='testsuite.Day16_AlertPractice.alertWithOkAndCancel_OkClick()'><b>alertWithOkAndCancel_OkClick</b><br>Test class: testsuite.Day16_AlertPractice</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day16_AlertPractice@25be7b63</td></tr>
+<tr>
+<td title='testsuite.Day12_RadioButton.radioButton()'><b>radioButton</b><br>Test class: testsuite.Day12_RadioButton</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day12_RadioButton@304bb45b</td></tr>
+<tr>
+<td title='testsuite.Day12_HW.selectRadioButton()'><b>selectRadioButton</b><br>Test class: testsuite.Day12_HW</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day12_HW@533bda92</td></tr>
+<tr>
+<td title='testsuite.Day12_Checkbox_Radio_Dropdownlist.ClickOnCheckBox()'><b>ClickOnCheckBox</b><br>Test class: testsuite.Day12_Checkbox_Radio_Dropdownlist</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day12_Checkbox_Radio_Dropdownlist@3f4faf53</td></tr>
+<tr>
+<td title='testsuite.Day13_Login.loginFail_IncorrectPass_IncorrectEmail()'><b>loginFail_IncorrectPass_IncorrectEmail</b><br>Test class: testsuite.Day13_Login</td>
+<td></td>
+<td>4</td>
+<td>testsuite.Day13_Login@723ca036</td></tr>
+<tr>
+<td title='testsuite.Day16_AlertPractice.alertWithTextbox_FillTextAndCancelClick()'><b>alertWithTextbox_FillTextAndCancelClick</b><br>Test class: testsuite.Day16_AlertPractice</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day16_AlertPractice@25be7b63</td></tr>
+<tr>
+<td title='testsuite.Day8_HW2_LocatorElement.findLocatorByName()'><b>findLocatorByName</b><br>Test class: testsuite.Day8_HW2_LocatorElement</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day8_HW2_LocatorElement@45d84a20</td></tr>
+<tr>
+<td title='testsuite.Day13_Login.logOut()'><b>logOut</b><br>Test class: testsuite.Day13_Login</td>
+<td></td>
+<td>6</td>
+<td>testsuite.Day13_Login@723ca036</td></tr>
+<tr>
+<td title='testsuite.Day13_Login.loginFail_IncorrectPass()'><b>loginFail_IncorrectPass</b><br>Test class: testsuite.Day13_Login</td>
+<td></td>
+<td>4</td>
+<td>testsuite.Day13_Login@723ca036</td></tr>
+<tr>
+<td title='testsuite.Day13_Login.loginFail_IncorrectEmail()'><b>loginFail_IncorrectEmail</b><br>Test class: testsuite.Day13_Login</td>
+<td></td>
+<td>4</td>
+<td>testsuite.Day13_Login@723ca036</td></tr>
+<tr>
+<td title='testsuite.Day8_HW1_LocatorElement.findLocatorById()'><b>findLocatorById</b><br>Test class: testsuite.Day8_HW1_LocatorElement</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day8_HW1_LocatorElement@28dcca0c</td></tr>
+<tr>
+<td title='testsuite.Day8_HW2_LocatorElement.findLocatorById()'><b>findLocatorById</b><br>Test class: testsuite.Day8_HW2_LocatorElement</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day8_HW2_LocatorElement@45d84a20</td></tr>
+<tr>
+<td title='testsuite.Day13_Login.loginSuccessfully()'><b>loginSuccessfully</b><br>Test class: testsuite.Day13_Login</td>
+<td></td>
+<td>5</td>
+<td>testsuite.Day13_Login@723ca036</td></tr>
+<tr>
+<td title='testsuite.Day8_HW1_LocatorElement.findLocatorByName()'><b>findLocatorByName</b><br>Test class: testsuite.Day8_HW1_LocatorElement</td>
+<td></td>
+<td>0</td>
+<td>testsuite.Day8_HW1_LocatorElement@28dcca0c</td></tr>
+<tr>
+<td title='testsuite.TrizenFlight.chooseDateTimeSuccessfully()'><b>chooseDateTimeSuccessfully</b><br>Test class: testsuite.TrizenFlight</td>
+<td></td>
+<td>0</td>
+<td>testsuite.TrizenFlight@2a693f59</td></tr>
+<tr>
+<td title='testsuite.TrizenFlight.findFlight()'><b>findFlight</b><br>Test class: testsuite.TrizenFlight</td>
+<td></td>
+<td>0</td>
+<td>testsuite.TrizenFlight@2a693f59</td></tr>
+</table><p>
+</body>
+</html>

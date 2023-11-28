@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite All" verbose="1">
+    <test name="Regression with firefox">
+        <parameter name="browserTest" value="firefox"></parameter>
+        <classes>
+            <class name="testsuite.PoupWindowns_Day17"/>
+            <class name="testsuite.TrizenFlight"/>
+            <class name="testsuite.Day12_Checkbox_Radio_Dropdownlist"/>
+            <class name="testsuite.Day12_Dropdownlist"/>
+            <class name="testsuite.Day12_HW"/>
+            <class name="testsuite.Day12_RadioButton"/>
+            <class name="testsuite.Day13_Login"/>
+            <class name="testsuite.Day16_AlertPractice"/>
+            <class name="testsuite.Day8_HW1_LocatorElement"/>
+            <class name="testsuite.Day8_HW2_LocatorElement"/>
+        </classes>
+    </test>
+
+    <test name="Regression with edge">
+        <parameter name="browserTest" value="edge"></parameter>
+        <classes>
+             <class name="testsuite.PoupWindowns_Day17"/>
+            <class name="testsuite.TrizenFlight"/>
+            <class name="testsuite.Day12_Checkbox_Radio_Dropdownlist"/>
+            <class name="testsuite.Day12_Dropdownlist"/>
+            <class name="testsuite.Day12_HW"/>
+            <class name="testsuite.Day12_RadioButton"/>
+            <class name="testsuite.Day13_Login"/>
+            <class name="testsuite.Day16_AlertPractice"/>
+            <class name="testsuite.Day8_HW1_LocatorElement"/>
+            <class name="testsuite.Day8_HW2_LocatorElement"/>
+        </classes>
+    </test>
+
+ <test name="Regression with chrome">
+        <parameter name="browserTest" value="chrome"></parameter>
+        <classes>
+             <class name="testsuite.PoupWindowns_Day17"/>
+            <class name="testsuite.TrizenFlight"/>
+            <class name="testsuite.Day12_Checkbox_Radio_Dropdownlist"/>
+            <class name="testsuite.Day12_Dropdownlist"/>
+            <class name="testsuite.Day12_HW"/>
+            <class name="testsuite.Day12_RadioButton"/>
+            <class name="testsuite.Day13_Login"/>
+            <class name="testsuite.Day16_AlertPractice"/>
+            <class name="testsuite.Day8_HW1_LocatorElement"/>
+            <class name="testsuite.Day8_HW2_LocatorElement"/>
+        </classes>
+    </test>
+</suite>
