@@ -21,7 +21,6 @@ private WebElement txtPass;
 private WebElement btnLogin;
 
 
-
 public LoginPageFactory(WebDriver _driver) {
 	this.driver = _driver;
 	PageFactory.initElements(driver, this);

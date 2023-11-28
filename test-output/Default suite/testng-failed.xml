@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testsuite.PoupWindowns_Day17">
+      <class name="testsuite.screen">
         <methods>
           <include name="openBrowser"/>
-          <include name="verifyNewTab"/>
+          <include name="hideClientPriceStartdate"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testsuite.PoupWindowns_Day17 -->
+      </class> <!-- testsuite.screen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -79,9 +79,15 @@ public class CommonBase {
 	}
 
 	public boolean isElementPresent(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(initWaitTime));
-		wait.until(ExpectedConditions.visibilityOf(getElementPresentDOM(locator)));
-		return getElementPresentDOM(locator).isDisplayed();
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(initWaitTime));
+			wait.until(ExpectedConditions.visibilityOf(getElementPresentDOM(locator)));
+			return getElementPresentDOM(locator).isDisplayed();
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		} catch (org.openqa.selenium.TimeoutException e2) {
+			return false;
+		}
 	}
 
 	public void click(By locator) {
@@ -96,6 +102,10 @@ public class CommonBase {
 		element.sendKeys(value);
 	}
 
+	public void type(WebElement element, String value) {
+		element.clear();
+		element.sendKeys(value);
+	}
 	/**
 	 * pause driver in timeInMillis
 	 * 

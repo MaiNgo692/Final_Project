@@ -4,44 +4,82 @@
   <test thread-count="5" name="Regression with firefox(failed)">
     <parameter name="browserTest" value="firefox"/>
     <classes>
-      <class name="testsuite.AddClient">
+      <class name="testsuite.deleteProject">
         <methods>
+          <include name="deleteProjectSuccessfully"/>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="addClientSuccessfully"/>
         </methods>
-      </class> <!-- testsuite.AddClient -->
+      </class> <!-- testsuite.deleteProject -->
+      <class name="testsuite.screen">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="hideClientPriceStartdate"/>
+          <include name="closeBrowser"/>
+          <include name="hideClient"/>
+        </methods>
+      </class> <!-- testsuite.screen -->
+      <class name="testsuite.editProject">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="editProjectSuccessfully"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testsuite.editProject -->
     </classes>
   </test> <!-- Regression with firefox(failed) -->
   <test thread-count="5" name="Regression with edge(failed)">
     <parameter name="browserTest" value="edge"/>
     <classes>
-      <class name="testsuite.AddClient">
+      <class name="testsuite.deleteProject">
         <methods>
+          <include name="deleteProjectSuccessfully"/>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="addClientSuccessfully"/>
         </methods>
-      </class> <!-- testsuite.AddClient -->
-      <class name="testsuite.Day16_AlertPractice">
+      </class> <!-- testsuite.deleteProject -->
+      <class name="testsuite.screen">
         <methods>
-          <include name="closeBrowser"/>
           <include name="openBrowser"/>
-          <include name="alertWithTextbox_FillTextAndCancelClick"/>
+          <include name="hideClientPriceStartdate"/>
+          <include name="closeBrowser"/>
+          <include name="hideClient"/>
         </methods>
-      </class> <!-- testsuite.Day16_AlertPractice -->
+      </class> <!-- testsuite.screen -->
+      <class name="testsuite.editProject">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="editProjectSuccessfully"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testsuite.editProject -->
     </classes>
   </test> <!-- Regression with edge(failed) -->
   <test thread-count="5" name="Regression with chrome(failed)">
     <parameter name="browserTest" value="chrome"/>
     <classes>
-      <class name="testsuite.AddClient">
+      <class name="testsuite.deleteProject">
+        <methods>
+          <include name="deleteProjectSuccessfully"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testsuite.deleteProject -->
+      <class name="testsuite.screen">
         <methods>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="addClientSuccessfully"/>
+          <include name="hideClientPriceStartdate"/>
+          <include name="hideClient"/>
         </methods>
-      </class> <!-- testsuite.AddClient -->
+      </class> <!-- testsuite.screen -->
+      <class name="testsuite.editProject">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="editProjectSuccessfully"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testsuite.editProject -->
     </classes>
   </test> <!-- Regression with chrome(failed) -->
 </suite> <!-- Failed suite [Suite All] -->
