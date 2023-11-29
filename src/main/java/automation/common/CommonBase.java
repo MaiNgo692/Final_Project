@@ -2,7 +2,6 @@ package automation.common;
 
 import static org.testng.Assert.assertTrue;
 
-import java.io.File;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -13,14 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
+
 
 /*
  * Author: Tran Hoan, mobile/zalo: +84-979535822
@@ -31,7 +26,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
  */
 public class CommonBase {
 	public WebDriver driver;
-	public int initWaitTime = 10;
+	public int initWaitTime = 30;
 
 	public WebDriver initChromeDriver(String URL) {
 		ChromeOptions options = new ChromeOptions();

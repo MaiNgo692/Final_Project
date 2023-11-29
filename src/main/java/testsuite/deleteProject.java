@@ -28,6 +28,8 @@ public class deleteProject extends CommonBase {
 		click(By.linkText("Projects"));
 		//find new added project by title
 		ProjectPageFactory projPage = new ProjectPageFactory(driver);
+		projPage.AddProjectFunction("new added project");
+		pause(5000);
 		projPage.searchProject("new added project");
 		//click delete icon
 		click(By.xpath("//a[contains(text(),'new added project')]//ancestor:: td//following-sibling::td[7]/a[@title='Delete project']"));

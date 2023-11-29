@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Optional;
 
 import automation.common.CommonBase;
@@ -25,7 +26,7 @@ public class ProjectPageFactory extends CommonBase {
 	private WebElement hideBtn;
 	
 //	Nút dropdown để filter
-	@FindBy(xpath ="//button[@class = 'btn btn-default smart-filter-dropdown dropdown-toggle caret']")
+	@FindBy(xpath ="(//a[text()='Manage Filters ']/ancestor::div)[12]")
 	private WebElement filterDropBtn;
 	//  Các lựa chọn trong dropdown list
 		@FindBy(xpath ="//a[text()='Manage Filters ']")
@@ -40,16 +41,16 @@ public class ProjectPageFactory extends CommonBase {
 		@FindBy(xpath ="//a[text()='All projects']")
 		private WebElement filterDropAllProject;
 		
-		@FindBy(xpath ="//a[text()='Completed']")
+		@FindBy(xpath ="//a[text()='Completed']/parent::li")
 		private WebElement filterDropCompleted;
 		
-		@FindBy(xpath ="//a[text()='High Priority']")
+		@FindBy(xpath ="//a[text()='High Priority']/parent::li")
 		private WebElement filterDropHightPriority;
 		
-		@FindBy(xpath ="//a[text()='Open projects']")
+		@FindBy(xpath ="//a[text()='Open projects']/parent::li")
 		private WebElement filterDropOpenProject;
 		
-		@FindBy(xpath ="//a[text()='Upcoming']")
+		@FindBy(xpath ="//a[text()='Upcoming']/parent::li")
 		private WebElement filterDropUpcoming;
 		
 //	Nút để hiển thị form filter
@@ -62,19 +63,19 @@ public class ProjectPageFactory extends CommonBase {
 			@FindBy(xpath ="(//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active select2-drop-above']//descendant::div)[1]")
 			private WebElement filterFormLablesSearch;
 			
-			@FindBy(xpath ="((//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active select2-drop-above']//descendant::div)[1]/following::ul/child::li)[2]")
+			@FindBy(xpath ="//div[text()='On track']/parent::li")
 			private WebElement filterFormLablesOnTrack;
 			
-			@FindBy(xpath ="((//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active select2-drop-above']//descendant::div)[1]/following::ul/child::li)[3]")
+			@FindBy(xpath ="//div[text()='Urgent']/parent::li")
 			private WebElement filterFormLablesUrgent;
 			
-			@FindBy(xpath ="((//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active select2-drop-above']//descendant::div)[1]/following::ul/child::li)[4]")
+			@FindBy(xpath ="//div[text()='Upcoming']/parent::li")
 			private WebElement filterFormLablesUpcoming;
 			
-			@FindBy(xpath ="((//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active select2-drop-above']//descendant::div)[1]/following::ul/child::li)[5]")
+			@FindBy(xpath ="//div[text()='Perfect']/parent::li")
 			private WebElement filterFormLablesPerfect;
 			
-			@FindBy(xpath ="((//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active select2-drop-above']//descendant::div)[1]/following::ul/child::li)[6]")
+			@FindBy(xpath ="//div[text()='High Priority']/parent::li")
 			private WebElement filterFormLablesHighPriority;
 	
 	//	Start date
@@ -83,6 +84,9 @@ public class ProjectPageFactory extends CommonBase {
 		//	Các lable để lựa chọn StartDate trong filter form
 			@FindBy(xpath ="//a[text()='This Month']")
 			private WebElement filterFormStartDateThisMonth;
+			
+			@FindBy(xpath ="//a[text()='Last Month']")
+			private WebElement filterFormStartDateLastMonth;
 			
 			@FindBy(xpath ="//a[text()='This Year']")
 			private WebElement filterFormStartDateThisYear;
@@ -96,7 +100,7 @@ public class ProjectPageFactory extends CommonBase {
 			@FindBy(xpath ="//a[text()='Next Month']")
 			private WebElement filterFormStartDateNextMonth;
 	// Expired dropdown
-		@FindBy(xpath ="//button[text()='Expired']")
+		@FindBy(xpath ="//button[text()='- Deadline -']")
 		private WebElement filterFormExpiredBtn;
 		//	Các lựa chọn trong expried
 			@FindBy(xpath ="//div[text()='Expired']")
@@ -210,16 +214,150 @@ public class ProjectPageFactory extends CommonBase {
 	}
 
 	public void AddProjectFunction(String title ) {
+		pause(2000);
 		addProject.click();
+		pause(2000);
 		addProjectTitle.sendKeys(title);
 		addProjectSaveBtn.click();
 	}
 	
+	public void filterCompletedProductBySelectBox() {
+		pause(2000);
+		filterDropBtn.click();
+		filterDropCompleted.click();
+	}
+	public void filterLableHighPriorityProductBySelectBox() {
+		pause(2000);
+		filterDropBtn.click();
+		filterDropHightPriority.click();
+	}
+	
+	public void filterOpenProductBySelectBox() {
+		pause(2000);
+		filterDropBtn.click();
+		filterDropOpenProject.click();
+	}
+	
+	public void filterUpcomingProductBySelectBox() {
+		pause(2000);
+		filterDropBtn.click();
+		filterDropUpcoming.click();
+	}
+	
+	public void filterCompletedProductByButton() {
+		pause(2000);
+		showFilterStatustCompletedBtn.click();
+	}
+	
+	public void filterHighPriorityProductByButton() {
+		pause(2000);
+		showFilterLableHighPriorityBtn.click();
+	}
+	
+	public void filterOpenProductByButton() {
+		pause(2000);
+		showFilterStatustOpenBtn.click();
+	}
+	
+	public void filterUpcomingProductByButton() {
+		pause(2000);
+		showFilterLableUpcomingBtn.click();
+	}
+	
+	public void filterManyConditionsProductByFilterForm( @Optional() String label,@Optional("") String startDate, @Optional("") String deadline,
+			  @Optional("") String status) {
+		pause(2000);
+		showFilterFormBtn.click();
+		filterFormLables.click();
+		switch(label) {
+		case "On track":
+			filterFormLablesOnTrack.click();
+			break;
+		case "Urgent":
+			filterFormLablesUrgent.click();
+			break;
+		case "Upcoming":
+			filterFormLablesUpcoming.click();
+			break;
+		case "Perfect":
+			filterFormLablesPerfect.click();
+			break;
+		case "High Priority":
+			filterFormLablesHighPriority.click();
+			break;
+		}
+		filterFormStartDate.click();
+		switch(startDate) {
+			case "This Month":
+				filterFormStartDateThisMonth.click();
+				break;
+			case "Last Month":
+				filterFormStartDateLastMonth.click();
+				break;
+			case "This Year":
+				filterFormStartDateThisYear.click();
+				break;
+			case "Last Year":
+				filterFormStartDateLastYear.click();
+				break;
+			case "Next 7 Days":
+				filterFormStartDateNext7Day.click();
+				break;
+			case "Next Month":
+				filterFormStartDateNextMonth.click();
+				break;
+		}
+		filterFormExpiredBtn.click();
+		switch(deadline) {
+		case "Expired":
+			filterFormExpiredExpired.click();
+			break;
+		case "Today":
+			filterFormExpiredToday.click();
+			break;
+		case "Tomorrow":
+			filterFormExpiredTomorrow.click();
+			break;
+		case "In 7 days":
+			filterFormExpiredIn7Days.click();
+			break;
+		case "In 15 days":
+			filterFormExpiredIn15Days.click();
+			break;
+		case "Custom":
+			filterFormExpiredCustom.click();
+			break;
+		}
+		filterFormStatusBtn.click();
+		switch(status) {
+		case "Open":
+			filterFormStatusOpen.click();
+			break;
+		case "Completed":
+			filterFormStatusCompleted.click();
+			break;
+		case "Hold":
+			filterFormStatusHold.click();
+			break;
+		case "Canceled":
+			filterFormStatusCanceled.click();
+			break;
+		}
+		
+	}
+	public void clearFilter() {
+		pause(2000);
+		filterDropBtn.click();
+		pause(2000);
+		filterDropClear.click();
+
+	}
 	public void searchProject(String title) {
+		inputSearch.clear();
 		type(inputSearch, title);
 
 	}
-
+	
 
 	public void chooseDatePicker(WebElement element, String datetime) {
 		((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('readonly','readonly')", element);		
