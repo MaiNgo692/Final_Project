@@ -15,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.apache.commons.lang3.RandomStringUtils;
 
 
 /*
@@ -223,5 +224,17 @@ public class CommonBase {
 	    driver.get(URL);
 		driver.manage().window().maximize();
 		return driver;
+	}
+	
+	public void openWebsite(String url) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		driver.get(url);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
+		driver.manage().window().maximize();
+	}
+	
+	public String randomString() {
+		String generatedString = RandomStringUtils.randomAlphabetic(5);
+		return (generatedString);
 	}
 }

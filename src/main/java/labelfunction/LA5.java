@@ -1,30 +1,29 @@
 package labelfunction;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import automation.common.CommonFunction;
 import automation.pageLocator.Rise_Dashboard_Page;
 import automation.pageLocator.Rise_Login_Page;
 import automation.pageLocator.Rise_Projects_Page;
+import automation.common.CommonBase;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
-public class LA5 extends CommonFunction {
-	WebDriver driver;
+public class LA5 extends CommonBase {
 	Rise_Login_Page lp;
 	Rise_Dashboard_Page dp;
 	Rise_Projects_Page pp;
 	String labelName = "TC5 LA5 " + randomString();
 
 	@BeforeClass
-	void openSite() {
-		System.setProperty("webdriver.http.factory", "jdk-http-client"); //fix Connection reset warning
-		driver=new ChromeDriver();
-		openWebsite(driver, "https://rise.fairsketch.com/signin");
+	@Parameters({"browserTest"})
+	void openSite(@Optional("browserTest")String br) {
+		setupDriver(br);
+		openWebsite("https://rise.fairsketch.com/signin");
 		lp = new Rise_Login_Page(driver);
 		dp = new Rise_Dashboard_Page(driver);
 		pp = new Rise_Projects_Page(driver);

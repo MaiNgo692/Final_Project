@@ -1,4 +1,4 @@
-package labelfunction;
+package addprojectfunction;
 
 import org.testng.annotations.Test;
 
@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class LA7 extends CommonBase {
+public class P1 extends CommonBase {
 	Rise_Login_Page lp;
 	Rise_Dashboard_Page dp;
 	Rise_Projects_Page pp;
@@ -31,11 +31,13 @@ public class LA7 extends CommonBase {
 	}
 
 	@Test
-	public void TC7() throws InterruptedException {
-		pp.clickLabelButton();
-		pp.clickCloseButton();
+	public void TC8() throws InterruptedException {
+		pp.clickAddProject();
+		String projectTitle = "P1 Project " + randomString();
+		pp.typeProjectTitleOrTasks(projectTitle);
+		pp.clickSaveProject();
 		Thread.sleep(2000);
-		Assert.assertEquals(pp.checkModal(), false);
+		Assert.assertEquals(pp.isCreatedProjectFound(projectTitle), true);
 	}
 
 	@AfterClass
