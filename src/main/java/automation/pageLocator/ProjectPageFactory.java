@@ -207,6 +207,8 @@ public class ProjectPageFactory extends CommonBase {
 	@FindBy(xpath = "//div[@id='select2-drop-mask']//following-sibling::div//input")
 	WebElement inputStatus;
 
+	@FindBy(xpath = "//button[text()=' Delete']")
+	WebElement deleteProjectBtn;
 	
 	public ProjectPageFactory(WebDriver _driver) {
 		this.driver = _driver;
@@ -367,6 +369,12 @@ public class ProjectPageFactory extends CommonBase {
 
 	}
 
+	public void deleteProject(String title) {
+		String deleteXpath = "//a[contains(text(),'"+title+"')]//ancestor:: td//following-sibling::td[7]/a[@title='Delete project']";
+		driver.findElement(By.xpath(deleteXpath)).click();
+		pause(2000);
+		deleteProjectBtn.click();
+	}
 	public void multiCheckbox(String[] checkList) {
 		for (int i = 0; i < checkList.length; i++) {
 			driver.findElement(By.xpath("//label[text()='Labels']//following-sibling::div")).click();

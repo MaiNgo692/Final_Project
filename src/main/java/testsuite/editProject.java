@@ -31,12 +31,12 @@ public class editProject extends CommonBase {
 	@Test
 	public void editProjectSuccessfully() throws InterruptedException {
 		LoginPageFactory login = new LoginPageFactory(driver);
-		login.LoginFunction("admin@demo.com	", "riseDemo");
+		login.LoginFunction("admin@demo.com", "riseDemo");
 		click(By.linkText("Projects"));
 		// find new added project by title
 		ProjectPageFactory projPage = new ProjectPageFactory(driver);
-//		projPage.AddProjectFunction("new added project");
-//		pause(5000);
+		projPage.AddProjectFunction("new added project");
+		pause(5000);
 		projPage.searchProject("new added project");
 		// click button edit
 		click(btnEdit);

@@ -24,16 +24,16 @@ public class deleteProject extends CommonBase {
 	@Test
 	public void deleteProjectSuccessfully() throws InterruptedException {
 		LoginPageFactory login = new LoginPageFactory(driver);
-		login.LoginFunction("admin@demo.com	", "riseDemo");
+		login.LoginFunction("admin@demo.com", "riseDemo");
 		click(By.linkText("Projects"));
 		//find new added project by title
 		ProjectPageFactory projPage = new ProjectPageFactory(driver);
-		projPage.AddProjectFunction("new added project");
-		pause(5000);
+//		projPage.AddProjectFunction("new added project");
+//		pause(5000);
 		projPage.searchProject("new added project");
 		//click delete icon
 		click(By.xpath("//a[contains(text(),'new added project')]//ancestor:: td//following-sibling::td[7]/a[@title='Delete project']"));
-		//click cancel
+		//click delete
 		click(By.xpath("//button[text()=' Delete']"));
 		//Check if delete successfully
 		projPage.searchProject("new added project");

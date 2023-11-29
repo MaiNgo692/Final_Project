@@ -8,20 +8,446 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">388,684</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite All</th></tr>
+<tr><td><a href="#t0">Regression with firefox</a></td><td class="num">2</td><td class="num attn">8</td><td class="num">0</td><td class="num attn">4</td><td class="num">195,481</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Regression with edge</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">736,719</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Regression with chrome</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">667,796</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">26</th><th class="num attn">8</th><th class="num">0</th><th class="num attn">8</th><th class="num">1,599,996</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">testsuite.filterProject</td><td><a href="#m0">clearFilterProductBy</a></td><td rowspan="1">1701232690400</td><td rowspan="1">63580</td></tr><tr class="passedeven"><td><a href="#m1">filterCompletedProductByButton</a></td><td rowspan="1">1701232511369</td><td rowspan="1">30921</td></tr><tr class="passedeven"><td><a href="#m2">filterCompletedProductBySelectBox</a></td><td rowspan="1">1701232370532</td><td rowspan="1">31046</td></tr><tr class="passedeven"><td><a href="#m3">filterHighPriorityProductByButton</a></td><td rowspan="1">1701232546762</td><td rowspan="1">30866</td></tr><tr class="passedeven"><td><a href="#m4">filterLableHighPriorityProductBySelectBox</a></td><td rowspan="1">1701232405914</td><td rowspan="1">30775</td></tr><tr class="passedeven"><td><a href="#m5">filterManyConditionsProductByFilterForm</a></td><td rowspan="1">1701232652620</td><td rowspan="1">33683</td></tr><tr class="passedeven"><td><a href="#m6">filterOpenProductByButton</a></td><td rowspan="1">1701232582211</td><td rowspan="1">31052</td></tr><tr class="passedeven"><td><a href="#m7">filterOpenProductBySelectBox</a></td><td rowspan="1">1701232440705</td><td rowspan="1">30781</td></tr><tr class="passedeven"><td><a href="#m8">filterUpcomingProductByButton</a></td><td rowspan="1">1701232617579</td><td rowspan="1">30886</td></tr><tr class="passedeven"><td><a href="#m9">filterUpcomingProductBySelectBox</a></td><td rowspan="1">1701232475692</td><td rowspan="1">31062</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite All</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression with firefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testsuite.filterProject</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1701237327314</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">testsuite.screen</td><td><a href="#m1">closeBrowser</a></td><td rowspan="1">1701237262434</td><td rowspan="1">2</td></tr><tr><th colspan="4">Regression with firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testsuite.deleteProject</td><td><a href="#m2">deleteProjectSuccessfully</a></td><td rowspan="1">1701237194386</td><td rowspan="1">33127</td></tr><tr class="failedodd"><td rowspan="1">testsuite.filterProject</td><td><a href="#m3">filterLableHighPriorityProductBySelectBox</a></td><td rowspan="1">1701237315366</td><td rowspan="1">11947</td></tr><tr class="failedeven"><td rowspan="2">testsuite.screen</td><td><a href="#m4">hideClient</a></td><td rowspan="1">1701237235785</td><td rowspan="1">2967</td></tr><tr class="failedeven"><td><a href="#m5">hideClientPriceStartdate</a></td><td rowspan="1">1701237246612</td><td rowspan="1">15821</td></tr><tr><th colspan="4">Regression with firefox &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="16">testsuite.filterProject</td><td><a href="#m6">closeBrowser</a></td><td rowspan="8">1701237327327</td><td rowspan="8">0</td></tr><tr class="skippedeven"><td><a href="#m7">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m8">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m9">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m10">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m11">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m12">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m13">closeBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m14">openBrowser</a></td><td rowspan="8">1701237327316</td><td rowspan="8">0</td></tr><tr class="skippedeven"><td><a href="#m15">openBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m16">openBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m17">openBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m18">openBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m19">openBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m20">openBrowser</a></td></tr><tr class="skippedeven"><td><a href="#m21">openBrowser</a></td></tr><tr><th colspan="4">Regression with firefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="8">testsuite.filterProject</td><td><a href="#m22">clearFilterProductBy</a></td><td rowspan="1">1701237327336</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m23">filterCompletedProductByButton</a></td><td rowspan="1">1701237327323</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m24">filterHighPriorityProductByButton</a></td><td rowspan="1">1701237327325</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m25">filterManyConditionsProductByFilterForm</a></td><td rowspan="1">1701237327334</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m26">filterOpenProductByButton</a></td><td rowspan="1">1701237327327</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m27">filterOpenProductBySelectBox</a></td><td rowspan="1">1701237327318</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m28">filterUpcomingProductByButton</a></td><td rowspan="1">1701237327331</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m29">filterUpcomingProductBySelectBox</a></td><td rowspan="1">1701237327321</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression with firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testsuite.editProject</td><td><a href="#m30">editProjectSuccessfully</a></td><td rowspan="1">1701237140328</td><td rowspan="1">45975</td></tr><tr class="passedodd"><td rowspan="1">testsuite.filterProject</td><td><a href="#m31">filterCompletedProductBySelectBox</a></td><td rowspan="1">1701237269538</td><td rowspan="1">38012</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Regression with edge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testsuite.deleteProject</td><td><a href="#m32">closeBrowser</a></td><td rowspan="1">1701237413586</td><td rowspan="1">4</td></tr><tr><th colspan="4">Regression with edge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testsuite.deleteProject</td><td><a href="#m33">deleteProjectSuccessfully</a></td><td rowspan="1">1701237380321</td><td rowspan="1">33263</td></tr><tr class="failedodd"><td rowspan="1">testsuite.filterProject</td><td><a href="#m34">filterManyConditionsProductByFilterForm</a></td><td rowspan="1">1701237926177</td><td rowspan="1">64062</td></tr><tr><th colspan="4">Regression with edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testsuite.editProject</td><td><a href="#m35">editProjectSuccessfully</a></td><td rowspan="1">1701237331289</td><td rowspan="1">43240</td></tr><tr class="passedodd"><td rowspan="9">testsuite.filterProject</td><td><a href="#m36">clearFilterProductBy</a></td><td rowspan="1">1701237996172</td><td rowspan="1">67733</td></tr><tr class="passedodd"><td><a href="#m37">filterCompletedProductByButton</a></td><td rowspan="1">1701237770822</td><td rowspan="1">32809</td></tr><tr class="passedodd"><td><a href="#m38">filterCompletedProductBySelectBox</a></td><td rowspan="1">1701237609667</td><td rowspan="1">39009</td></tr><tr class="passedodd"><td><a href="#m39">filterHighPriorityProductByButton</a></td><td rowspan="1">1701237810090</td><td rowspan="1">32895</td></tr><tr class="passedodd"><td><a href="#m40">filterLableHighPriorityProductBySelectBox</a></td><td rowspan="1">1701237654642</td><td rowspan="1">33019</td></tr><tr class="passedodd"><td><a href="#m41">filterOpenProductByButton</a></td><td rowspan="1">1701237848768</td><td rowspan="1">32758</td></tr><tr class="passedodd"><td><a href="#m42">filterOpenProductBySelectBox</a></td><td rowspan="1">1701237693635</td><td rowspan="1">32802</td></tr><tr class="passedodd"><td><a href="#m43">filterUpcomingProductByButton</a></td><td rowspan="1">1701237887481</td><td rowspan="1">32791</td></tr><tr class="passedodd"><td><a href="#m44">filterUpcomingProductBySelectBox</a></td><td rowspan="1">1701237732263</td><td rowspan="1">32766</td></tr><tr class="passedeven"><td rowspan="2">testsuite.screen</td><td><a href="#m45">hideClient</a></td><td rowspan="1">1701237419499</td><td rowspan="1">48283</td></tr><tr class="passedeven"><td><a href="#m46">hideClientPriceStartdate</a></td><td rowspan="1">1701237473713</td><td rowspan="1">129679</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Regression with chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testsuite.deleteProject</td><td><a href="#m47">deleteProjectSuccessfully</a></td><td rowspan="1">1701238113612</td><td rowspan="1">32681</td></tr><tr class="failedodd"><td rowspan="1">testsuite.filterProject</td><td><a href="#m48">filterManyConditionsProductByFilterForm</a></td><td rowspan="1">1701238632812</td><td rowspan="1">27075</td></tr><tr><th colspan="4">Regression with chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testsuite.editProject</td><td><a href="#m49">editProjectSuccessfully</a></td><td rowspan="1">1701238068236</td><td rowspan="1">41228</td></tr><tr class="passedodd"><td rowspan="9">testsuite.filterProject</td><td><a href="#m50">clearFilterProductBy</a></td><td rowspan="1">1701238664127</td><td rowspan="1">67662</td></tr><tr class="passedodd"><td><a href="#m51">filterCompletedProductByButton</a></td><td rowspan="1">1701238485041</td><td rowspan="1">32973</td></tr><tr class="passedodd"><td><a href="#m52">filterCompletedProductBySelectBox</a></td><td rowspan="1">1701238336853</td><td rowspan="1">32703</td></tr><tr class="passedodd"><td><a href="#m53">filterHighPriorityProductByButton</a></td><td rowspan="1">1701238522077</td><td rowspan="1">32939</td></tr><tr class="passedodd"><td><a href="#m54">filterLableHighPriorityProductBySelectBox</a></td><td rowspan="1">1701238373813</td><td rowspan="1">32949</td></tr><tr class="passedodd"><td><a href="#m55">filterOpenProductByButton</a></td><td rowspan="1">1701238559102</td><td rowspan="1">32727</td></tr><tr class="passedodd"><td><a href="#m56">filterOpenProductBySelectBox</a></td><td rowspan="1">1701238410936</td><td rowspan="1">32603</td></tr><tr class="passedodd"><td><a href="#m57">filterUpcomingProductByButton</a></td><td rowspan="1">1701238595840</td><td rowspan="1">32894</td></tr><tr class="passedodd"><td><a href="#m58">filterUpcomingProductBySelectBox</a></td><td rowspan="1">1701238447698</td><td rowspan="1">32858</td></tr><tr class="passedeven"><td rowspan="2">testsuite.screen</td><td><a href="#m59">hideClient</a></td><td rowspan="1">1701238150488</td><td rowspan="1">48233</td></tr><tr class="passedeven"><td><a href="#m60">hideClientPriceStartdate</a></td><td rowspan="1">1701238203009</td><td rowspan="1">129499</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testsuite.filterProject#clearFilterProductBy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testsuite.filterProject#filterCompletedProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testsuite.filterProject#filterCompletedProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testsuite.filterProject#filterHighPriorityProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testsuite.filterProject#filterLableHighPriorityProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testsuite.filterProject#filterManyConditionsProductByFilterForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testsuite.filterProject#filterOpenProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testsuite.filterProject#filterOpenProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testsuite.filterProject#filterUpcomingProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testsuite.filterProject#filterUpcomingProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression with firefox</h2><h3 id="m0">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testsuite.screen#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c2774cf7-ad24-48ca-bd00-c182c1ba81f8, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:17513, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17456, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17513/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c2774cf7-ad24-48ca-bd00-c182c1ba81f8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.screen.closeBrowser(screen.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testsuite.deleteProject#deleteProjectSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;new added project&apos;)]//ancestor:: td//following-sibling::td[7]/a[@title=&apos;Delete project&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:48290, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36408, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48290/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbdcace2-f22f-4461-b529-02361c8c812a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:72)
+	at automation.common.CommonBase.click(CommonBase.java:89)
+	at testsuite.deleteProject.deleteProjectSuccessfully(deleteProject.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testsuite.filterProject#filterLableHighPriorityProductBySelectBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, findElement {using=link text, value=Projects}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:72)
+	at automation.common.CommonBase.click(CommonBase.java:89)
+	at testsuite.filterProject.filterLableHighPriorityProductBySelectBox(filterProject.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testsuite.screen#hideClient</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default column-show-hide-popover&quot;&gt; is not clickable at point (313,186) because another element &lt;div id=&quot;pre-loader&quot;&gt; obscures it
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [451cd14d-9de8-4d45-be84-c462c06c6bdb, clickElement {id=c57a7528-d444-4099-995b-ff879a018ae7}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:12852, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4180, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:12852/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (451cd14d-9de8-4d45-be84-c462c06c6bdb)] -&gt; xpath: //div[@class=&apos;filter-item-box&apos;][1]/button]
+Session ID: 451cd14d-9de8-4d45-be84-c462c06c6bdb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at automation.common.CommonBase.click(CommonBase.java:92)
+	at testsuite.screen.hideClient(screen.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testsuite.screen#hideClientPriceStartdate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c2774cf7-ad24-48ca-bd00-c182c1ba81f8, findElement {using=link text, value=Projects}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:17513, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17456, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17513/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c2774cf7-ad24-48ca-bd00-c182c1ba81f8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:72)
+	at automation.common.CommonBase.click(CommonBase.java:89)
+	at testsuite.screen.hideClientPriceStartdate(screen.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testsuite.filterProject#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">testsuite.filterProject#openBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">testsuite.filterProject#clearFilterProductBy</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">testsuite.filterProject#filterCompletedProductByButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">testsuite.filterProject#filterHighPriorityProductByButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">testsuite.filterProject#filterManyConditionsProductByFilterForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">testsuite.filterProject#filterOpenProductByButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">testsuite.filterProject#filterOpenProductBySelectBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">testsuite.filterProject#filterUpcomingProductByButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">testsuite.filterProject#filterUpcomingProductBySelectBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [49955726-62c3-4d9e-9df0-8fdba0045c26, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:debuggerAddress: 127.0.0.1:4585, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35704, moz:profile: C:\Users\NGOMAI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4585/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49955726-62c3-4d9e-9df0-8fdba0045c26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:855)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:850)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:133)
+	at testsuite.filterProject.closeBrowser(filterProject.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">testsuite.editProject#editProjectSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">testsuite.filterProject#filterCompletedProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression with edge</h2><h3 id="m32">testsuite.deleteProject#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=119.0.2151.72)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2d03eee0b45e99a07e6d4957c9a407d8, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63226}, msedge: {msedgedriverVersion: 119.0.2151.58 (33e26e7eb4fb..., userDataDir: C:\Users\NGOMAI~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63226/devtoo..., se:cdpVersion: 119.0.2151.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d03eee0b45e99a07e6d4957c9a407d8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:777)
+	at automation.common.CommonBase.quitDriver(CommonBase.java:134)
+	at testsuite.deleteProject.closeBrowser(deleteProject.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">testsuite.deleteProject#deleteProjectSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;new added project&apos;)]//ancestor:: td//following-sibling::td[7]/a[@title=&apos;Delete project&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:72)
+	at automation.common.CommonBase.click(CommonBase.java:89)
+	at testsuite.deleteProject.deleteProjectSuccessfully(deleteProject.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=119.0.2151.72)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2d03eee0b45e99a07e6d4957c9a407d8, findElement {using=xpath, value=//a[contains(text(),&apos;new added project&apos;)]//ancestor:: td//following-sibling::td[7]/a[@title=&apos;Delete project&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63226}, msedge: {msedgedriverVersion: 119.0.2151.58 (33e26e7eb4fb..., userDataDir: C:\Users\NGOMAI~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63226/devtoo..., se:cdpVersion: 119.0.2151.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d03eee0b45e99a07e6d4957c9a407d8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 31 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">testsuite.filterProject#filterManyConditionsProductByFilterForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;Test Filter Many Condition by filter form 1&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63879}, msedge: {msedgedriverVersion: 119.0.2151.58 (33e26e7eb4fb..., userDataDir: C:\Users\NGOMAI~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63879/devtoo..., se:cdpVersion: 119.0.2151.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d488e45d2edcb4cace79df0b2c46c6fc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:72)
+	at testsuite.filterProject.filterManyConditionsProductByFilterForm(filterProject.java:214)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">testsuite.editProject#editProjectSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">testsuite.filterProject#clearFilterProductBy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">testsuite.filterProject#filterCompletedProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">testsuite.filterProject#filterCompletedProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">testsuite.filterProject#filterHighPriorityProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">testsuite.filterProject#filterLableHighPriorityProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">testsuite.filterProject#filterOpenProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">testsuite.filterProject#filterOpenProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">testsuite.filterProject#filterUpcomingProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">testsuite.filterProject#filterUpcomingProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">testsuite.screen#hideClient</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">testsuite.screen#hideClientPriceStartdate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression with chrome</h2><h3 id="m47">testsuite.deleteProject#deleteProjectSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;new added project&apos;)]//ancestor:: td//following-sibling::td[7]/a[@title=&apos;Delete project&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\NGOMAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63996/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6dc51bd9d477f78536a29e235ec13591
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:72)
+	at automation.common.CommonBase.click(CommonBase.java:89)
+	at testsuite.deleteProject.deleteProjectSuccessfully(deleteProject.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">testsuite.filterProject#filterManyConditionsProductByFilterForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; col-md-9&quot;&gt;...&lt;/div&gt; is not clickable at point (861, 519). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebcd8d4b5a511b06651972bfed03fe75, clickElement {id=8E3C6EA59F3984102AFC425075F04C7A_element_204}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\NGOMAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64254/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ebcd8d4b5a511b06651972bfed03fe75)] -&gt; xpath: //label[text()=&apos;Labels&apos;]//following-sibling::div]
+Session ID: ebcd8d4b5a511b06651972bfed03fe75
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at automation.pageLocator.ProjectPageFactory.multiCheckbox(ProjectPageFactory.java:380)
+	at automation.pageLocator.ProjectPageFactory.editProject(ProjectPageFactory.java:434)
+	at testsuite.filterProject.filterManyConditionsProductByFilterForm(filterProject.java:208)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">testsuite.editProject#editProjectSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">testsuite.filterProject#clearFilterProductBy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">testsuite.filterProject#filterCompletedProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">testsuite.filterProject#filterCompletedProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">testsuite.filterProject#filterHighPriorityProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">testsuite.filterProject#filterLableHighPriorityProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">testsuite.filterProject#filterOpenProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">testsuite.filterProject#filterOpenProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">testsuite.filterProject#filterUpcomingProductByButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">testsuite.filterProject#filterUpcomingProductBySelectBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">testsuite.screen#hideClient</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">testsuite.screen#hideClientPriceStartdate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

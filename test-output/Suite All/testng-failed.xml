@@ -11,21 +11,29 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testsuite.deleteProject -->
+      <class name="testsuite.filterProject">
+        <methods>
+          <include name="filterHighPriorityProductByButton"/>
+          <include name="filterCompletedProductByButton"/>
+          <include name="filterManyConditionsProductByFilterForm"/>
+          <include name="clearFilterProductBy"/>
+          <include name="filterUpcomingProductByButton"/>
+          <include name="openBrowser"/>
+          <include name="filterOpenProductByButton"/>
+          <include name="closeBrowser"/>
+          <include name="filterUpcomingProductBySelectBox"/>
+          <include name="filterOpenProductBySelectBox"/>
+          <include name="filterLableHighPriorityProductBySelectBox"/>
+        </methods>
+      </class> <!-- testsuite.filterProject -->
       <class name="testsuite.screen">
         <methods>
           <include name="openBrowser"/>
-          <include name="hideClientPriceStartdate"/>
           <include name="closeBrowser"/>
+          <include name="hideClientPriceStartdate"/>
           <include name="hideClient"/>
         </methods>
       </class> <!-- testsuite.screen -->
-      <class name="testsuite.editProject">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="editProjectSuccessfully"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testsuite.editProject -->
     </classes>
   </test> <!-- Regression with firefox(failed) -->
   <test thread-count="5" name="Regression with edge(failed)">
@@ -38,21 +46,13 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testsuite.deleteProject -->
-      <class name="testsuite.screen">
+      <class name="testsuite.filterProject">
         <methods>
+          <include name="filterManyConditionsProductByFilterForm"/>
           <include name="openBrowser"/>
-          <include name="hideClientPriceStartdate"/>
-          <include name="closeBrowser"/>
-          <include name="hideClient"/>
-        </methods>
-      </class> <!-- testsuite.screen -->
-      <class name="testsuite.editProject">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="editProjectSuccessfully"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testsuite.editProject -->
+      </class> <!-- testsuite.filterProject -->
     </classes>
   </test> <!-- Regression with edge(failed) -->
   <test thread-count="5" name="Regression with chrome(failed)">
@@ -65,21 +65,13 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testsuite.deleteProject -->
-      <class name="testsuite.screen">
+      <class name="testsuite.filterProject">
         <methods>
+          <include name="filterManyConditionsProductByFilterForm"/>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="hideClientPriceStartdate"/>
-          <include name="hideClient"/>
         </methods>
-      </class> <!-- testsuite.screen -->
-      <class name="testsuite.editProject">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="editProjectSuccessfully"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testsuite.editProject -->
+      </class> <!-- testsuite.filterProject -->
     </classes>
   </test> <!-- Regression with chrome(failed) -->
 </suite> <!-- Failed suite [Suite All] -->

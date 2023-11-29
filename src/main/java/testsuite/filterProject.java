@@ -29,7 +29,7 @@ public class filterProject extends CommonBase{
 	@Test(priority = 1)
 	public void filterCompletedProductBySelectBox() {
 		LoginPageFactory login = new LoginPageFactory(driver);
-		login.LoginFunction("admin@demo.com	", "riseDemo");
+		login.LoginFunction("admin@demo.com", "riseDemo");
 		click(By.linkText("Projects"));
 		
 		ProjectPageFactory projectFactory = new ProjectPageFactory(driver);
@@ -44,6 +44,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterCompletedProductBySelectBox();
 		projectFactory.searchProject("Test Filter Completed 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Completed 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Completed 1");
 	}
 	
 	@Test(priority = 2)
@@ -64,6 +65,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterLableHighPriorityProductBySelectBox();
 		projectFactory.searchProject("Test Filter High Priority 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter High Priority 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter High Priority 1");
 	}
 	
 	@Test(priority = 3)
@@ -84,6 +86,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterOpenProductBySelectBox();
 		projectFactory.searchProject("Test Filter Open 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Open 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Open 1");
 	}
 	
 	@Test(priority = 4)
@@ -104,6 +107,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterUpcomingProductBySelectBox();
 		projectFactory.searchProject("Test Filter Upcoming 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Upcoming 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Upcoming 1");
 	}
 	
 	@Test(priority = 5)
@@ -124,6 +128,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterCompletedProductByButton();
 		projectFactory.searchProject("Test Filter Completed by button 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Completed by button 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Completed by button 1");
 	}
 	
 	@Test(priority = 6)
@@ -144,6 +149,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterHighPriorityProductByButton();
 		projectFactory.searchProject("Test Filter High Priority by button 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter High Priority by button 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter High Priority by button 1");
 	}
 	
 	@Test(priority = 7)
@@ -164,6 +170,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterOpenProductByButton();
 		projectFactory.searchProject("Test Filter Open by button 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Open by button 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Open by button 1");
 	}
 	@Test(priority = 8)
 	public void filterUpcomingProductByButton() {
@@ -183,6 +190,7 @@ public class filterProject extends CommonBase{
 		projectFactory.filterUpcomingProductByButton();
 		projectFactory.searchProject("Test Filter Upcoming by button 1");
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Upcoming by button 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Upcoming by button 1");
 	}
 	
 	@Test(priority = 9)
@@ -204,6 +212,7 @@ public class filterProject extends CommonBase{
 		projectFactory.searchProject("Test Filter Many Condition by filter form");
 		pause(3000);
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test Filter Many Condition by filter form 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test Filter Many Condition by filter form 1");
 	}
 	
 	@Test(priority = 10)
@@ -239,6 +248,8 @@ public class filterProject extends CommonBase{
 		pause(3000);
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test clear filter project 1')]")).isDisplayed());
 		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'Test clear filter project second 1')]")).isDisplayed());
+		projectFactory.deleteProject("Test clear filter project 1");
+		projectFactory.deleteProject("Test clear filter project second 1");
 	}
 	
 	@AfterMethod
