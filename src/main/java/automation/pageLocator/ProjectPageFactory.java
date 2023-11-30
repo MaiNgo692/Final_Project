@@ -376,21 +376,32 @@ public class ProjectPageFactory extends CommonBase {
 		deleteProjectBtn.click();
 	}
 	public void multiCheckbox(String[] checkList) {
-		for (int i = 0; i < checkList.length; i++) {
-			driver.findElement(By.xpath("//label[text()='Labels']//following-sibling::div")).click();
-			List<WebElement> listCheckbox = driver
-					.findElements(By.xpath("//div[@id='select2-drop-mask']//following-sibling::div//ul/li"));
-			for (int j = 0; j < listCheckbox.size(); j++) {
-				WebElement checkBoxItem = listCheckbox.get(j);
-				if (checkList[i].equals(checkBoxItem.getText())) {
-					checkBoxItem.click();
-					break;
-				} else {
-					continue;
+		//check if exist label already
+				List<WebElement> labelsChoice = driver.findElements(By.xpath("//label[text()='Labels']//following-sibling::div//ul/li[@class='select2-search-choice']/a"));
+				if(labelsChoice.size()!=0) {
+					//clear labels
+					for (int i = 0; i < labelsChoice.size(); i++) {
+						labelsChoice.get(i).click();
+						pause(3000);
+					}
 				}
-			}
-		}
-		pause(2000);
+				//add labels
+				for (int i = 0; i < checkList.length; i++) {
+					driver.findElement(By.xpath("//label[text()='Labels']//following-sibling::div")).click();
+					List<WebElement> listCheckbox = driver
+							.findElements(By.xpath("//div[@id='select2-drop-mask']//following-sibling::div//ul/li"));
+					
+					for (int j = 0; j < listCheckbox.size(); j++) {
+						WebElement checkBoxItem = listCheckbox.get(j);
+						if (checkList[i].equals(checkBoxItem.getText())) {
+							checkBoxItem.click();
+							break;
+						} else {
+							continue;
+						}
+					}
+				}
+				pause(2000);
 	}
 
 	// Edit modal screen

@@ -30,26 +30,35 @@ public class editProject extends CommonBase {
 
 	@Test
 	public void editProjectSuccessfully() throws InterruptedException {
+		String oldProjectName = "new added project 2";
+		String newProjectName = "new added project 1";
 		LoginPageFactory login = new LoginPageFactory(driver);
-		login.LoginFunction("admin@demo.com", "riseDemo");
+		login.LoginFunction("admin@demo.com	", "riseDemo");
 		click(By.linkText("Projects"));
+		// click button all projects
+		click(By.xpath("//button[text()='All projects']"));
 		// find new added project by title
 		ProjectPageFactory projPage = new ProjectPageFactory(driver);
-		projPage.AddProjectFunction("new added project");
-		pause(5000);
-		projPage.searchProject("new added project");
+		projPage.searchProject(oldProjectName);
 		// click button edit
 		click(btnEdit);
 		// edit
 		String[] listLabels = new String[] { "Urgent", "Upcoming" };
-		projPage.editProject("new added project 1", "Client Project", "Demo Client", "abc", "27-11-2023", "30-11-2023",
+		projPage.editProject(newProjectName, "Client Project", "Demo Client", "abc", "27-11-2023", "1-12-2023",
 				"36000", listLabels, "Completed");
 		// click Save
 		click(btnSave);
 		pause(5000);
-		//check
-		projPage.searchProject("new added project 1");
-		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'new added project 1')]")).isDisplayed());
+		// check
+		projPage.searchProject(newProjectName);
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//following-sibling::span[text()='Upcoming']")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//following-sibling::span[text()='Urgent']")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//ancestor::td//following-sibling::td/a[text()='Demo Client']")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//ancestor::td//following-sibling::td[contains(text(),'36,000')]")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//ancestor::td//following-sibling::td[contains(text(),'27-11-2023')]")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//ancestor::td//following-sibling::td[contains(text(),'1-12-2023')]")).isDisplayed());
+		assertTrue(getElementPresentDOM(By.xpath("//a[contains(text(),'"+newProjectName+"')]//ancestor::td//following-sibling::td[contains(text(),'Completed')]")).isDisplayed());
 		pause(5000);
 		
 	}
